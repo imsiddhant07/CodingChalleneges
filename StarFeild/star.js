@@ -1,16 +1,16 @@
 function Star() {
-this.x = random(-width,width);
-this.y = random(-height,height);
-this.z = random(width);
+this.x = random(-width/2,width/2);
+this.y = random(-height/2,height/2);
+this.z = random(width/2);
 this.pz = this.z;
 
 
 this.update = function(){
 this.z = this.z -speed;
 if(this.z<1){
-this.z = random(width);
-this.x = random(-width,width);
-this.y = random(-height,height);
+this.z = random(width/2);
+this.x = random(-width/2,width/2);
+this.y = random(-height/2,height/2);
 }
 
 };
